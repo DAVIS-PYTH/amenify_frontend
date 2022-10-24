@@ -5,7 +5,7 @@ import { LOGIN } from '../utilities/constants';
 
 const Profile = () => {
   const router = useRouter();
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState<any>(null);
 
   useEffect(() => {
     // Perform localStorage action

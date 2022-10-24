@@ -8,7 +8,7 @@ import Profile from './Profile';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState<any>(null);
 
   useEffect(() => {
     // Perform localStorage action
@@ -49,7 +49,7 @@ const Navbar = () => {
         <p>
           <span className='text-dark text-14'>Hi,</span>{' '}
           <span className='text-dark font-bold ml-1 text-14'>
-            {userData && userData.name.split(' ')[0]}
+            {userData && userData?.name?.split(' ')[0]}
           </span>
         </p>
         <MdKeyboardArrowDown className='text-dark w-[14px]' />
