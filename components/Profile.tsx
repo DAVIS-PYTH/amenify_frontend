@@ -20,6 +20,7 @@ const Profile = () => {
     await localStorage.removeItem('userDetails');
     document.cookie =
       'userToken=; Max-Age=0; path=/; domain=' + location.hostname;
+    document.cookie = 'userToken=; Max-Age=0; path=/; domain=' + location.host;
     router.push(LOGIN);
   };
   return (
