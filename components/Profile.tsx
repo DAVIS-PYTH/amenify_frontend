@@ -20,8 +20,7 @@ const Profile = () => {
     await localStorage.removeItem('userDetails');
     document.cookie =
       'userToken=; Max-Age=0; path=/; domain=' + location.hostname;
-    document.cookie =
-      'userToken=; Max-Age=0; path=/; domain=amenify.vercel.app';
+    document.cookie = 'userToken=; Max-Age=0; path=/;';
     router.push(LOGIN);
   };
   return (
